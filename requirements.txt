@@ -1,0 +1,16 @@
+# Core Frameworks
+langgraph
+langchain-core
+
+# LLM Integrations
+langchain-google-genai
+langchain-huggingface
+huggingface_hub
+
+# Environment Management
+python-dotenv
+
+
+ipywidgets
+
+langchain-groq
