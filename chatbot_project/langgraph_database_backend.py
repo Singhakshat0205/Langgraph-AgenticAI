@@ -20,6 +20,8 @@ from langchain_core.tools import tool
 from langgraph.prebuilt import ToolNode, tools_condition
 import sqlite3
 import requests
+from langchain_groq import ChatGroq
+
 
 load_dotenv()
 
@@ -29,7 +31,8 @@ search_tool= DuckDuckGoSearchRun(region= 'us-en')
 
 model = ChatGroq(
     model_name="qwen/qwen3.8-27b",
-    temperature=0
+    temperature=0,
+    max_tokens=500
 )
 
 @tool 
